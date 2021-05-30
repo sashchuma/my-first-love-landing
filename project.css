@@ -1,0 +1,140 @@
+*{
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Oswald;
+	margin: 0;
+}
+
+p {
+	width:100%;
+	font-size:smaller;
+	font-family: "Open Sans";
+	font-weight: lighter;
+}
+
+h2 {
+	font-family: Oswald-ExtraLight;
+	font-size: small;
+	font-weight: 100;
+}
+
+h3 {
+	font-weight: 100;
+}
+.header{
+	font-size: smaller;
+	width: 1000px;
+	font-family: "Oswald-ExtraLight";
+	margin: auto;
+	
+}
+
+.first-wrapper {
+	background-color: rgb(208, 230, 223);
+	padding: 100px 0;
+}
+
+.first {
+	width: 1000px;
+	margin: auto;
+	height: 300px;
+}
+
+.title {
+	font-size: 36px;
+	text-align: left;
+	width: 70%;
+}
+
+.leftside {
+	padding: 30px 20px;
+	float: left;
+	width: 50%;
+	height: 300px;
+	overflow: scroll;
+	background-color: #FFF;
+	
+}
+
+.rightside {
+	float: right;
+	width: 50%;
+	height: 300px;
+	object-fit: cover;
+	overflow:hidden;
+}
+	
+.rightside img {
+	object-position: 0 -500px;
+	height: 1000px;
+}
+
+.second {
+	width: 100%;
+	height: 400px;
+	align-self: center;
+	border-style: solid;
+	border-width: 50px 250px;
+	border-color: rgb(40, 53, 117);
+	
+}
+	
+.left {
+	float: left;
+	width: 33.33%;
+	width: calc(100% / 3);
+	height: 300px;
+	object-fit: cover;
+	overflow: hidden;
+}	
+
+.top{
+	height: 50%;
+	object-fit: cover;
+}
+.bottom{
+	height:50%;
+	object-fit: cover;	
+}	
+
+	
+.right{
+	float: right;
+	width: 33.33%;
+	width: calc(100% / 3);
+	height: 300px;
+	padding: 30px 20px;
+	overflow: scroll;
+	background-color: rgb(233, 174, 172);
+	font-size: smaller;
+	
+}	
+
+.right h2 {
+	color: rgb(40, 53, 117);
+}
+
+.right a {
+	color: FFF;
+	background-color: rgb(233, 174, 172);
+}
+	
+.description {
+	height: 200px;
+	padding: 50px 300px;
+	font-family: "Open Sans";
+	background-color: rgb(233, 174, 172);
+	line-height: 30px;	
+	text-align: justify;
+}	
+	
+	
+	
+	
+@font-face {
+	font-family: Oswald; /* Имя шрифта */
+	src: url(Oswald-VariableFont_wght.ttf); /* Путь к файлу со шрифтом */
+	}
+	
