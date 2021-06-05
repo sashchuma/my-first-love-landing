@@ -9,23 +9,36 @@ body {
 
 p {
 	width:100%;
-	font-size:smaller;
+	font-size: 12px;
 	font-family: "Open Sans";
-	font-weight: lighter;
+	font-weight: 300;
+	line-height: 165%;
+	
 }
 
 h2 {
 	font-family: Oswald-ExtraLight;
-	font-size: small;
+	font-size: 23px;
 	font-weight: 100;
 }
 
 h3 {
-	font-weight: 100;
+	font-family: "Open Sans";
+	font-weight: 600;
+	font-size: 27px;
+	line-height: 160%;
 }
+
+.header h2 {
+	margin: 0;
+	padding: 10px 0;
+	
+}
+
 .header{
-	font-size: smaller;
-	width: 1000px;
+	
+	width: 855px;
+	height: 55px;
 	font-family: "Oswald-ExtraLight";
 	margin: auto;
 	
@@ -33,26 +46,31 @@ h3 {
 
 .first-wrapper {
 	background-color: rgb(208, 230, 223);
-	padding: 100px 0;
+	padding: 52px 0;
+	height: 552px;
 }
 
 .first {
-	width: 1000px;
+	width: 855px;
 	margin: auto;
-	height: 300px;
+	height: 552px;
 }
 
 .title {
-	font-size: 36px;
+	margin: 0 0 20px 0;
+	line-height: 78px; 
+	font-size: 72px;
+	font-weight: bold;
+	letter-spacing: 4px;
 	text-align: left;
 	width: 70%;
 }
 
 .leftside {
-	padding: 30px 20px;
+	padding: 90px 45px;
 	float: left;
 	width: 50%;
-	height: 300px;
+	height: 450px;
 	overflow: scroll;
 	background-color: #FFF;
 	
@@ -61,51 +79,66 @@ h3 {
 .rightside {
 	float: right;
 	width: 50%;
-	height: 300px;
+	height: 450px;
 	object-fit: cover;
 	overflow:hidden;
 }
 	
 .rightside img {
-	object-position: 0 -500px;
-	height: 1000px;
+	object-position: 0 -154px;
+	width: 428px;
+}
+
+.second-wrapper {
+	background-color: rgb(40, 53, 117);
+	padding: 52px 0;
+	height: 578px;
+	width: 100%;
 }
 
 .second {
-	width: 100%;
-	height: 400px;
-	align-self: center;
-	border-style: solid;
-	border-width: 50px 250px;
-	border-color: rgb(40, 53, 117);
+	width: 855px;
+	margin: auto;
+	height: 552px;
 	
 }
 	
 .left {
 	float: left;
-	width: 33.33%;
-	width: calc(100% / 3);
-	height: 300px;
+	width: 285px;
+	height: 475px;
 	object-fit: cover;
 	overflow: hidden;
 }	
+
+.left img {
+	object-position: -28px 0px;
+}
+
 
 .top{
 	height: 50%;
 	object-fit: cover;
 }
+
+.top img{
+	object-position: 0px -96px;	
+}
+
 .bottom{
 	height:50%;
 	object-fit: cover;	
 }	
 
+.bottom img {
+	object-position: -2px -23px;
+}
 	
 .right{
 	float: right;
-	width: 33.33%;
-	width: calc(100% / 3);
-	height: 300px;
-	padding: 30px 20px;
+	width: 285px;
+	height: 475px;
+	padding: 70px 24px;
 	overflow: scroll;
 	background-color: rgb(233, 174, 172);
 	font-size: smaller;
@@ -114,20 +147,35 @@ h3 {
 
 .right h2 {
 	color: rgb(40, 53, 117);
+	margin: 22px 70px 26px 0;
+}
+
+.right p {
+	margin-bottom: 50px;
 }
 
 .right a {
-	color: FFF;
-	background-color: rgb(233, 174, 172);
+	box-sizing: border-box;
+	color: #FFF;
+	background-color: rgb(40, 53, 117);
+	width: 126px;
+	height: 32px;
+	text-decoration: none;
+	margin-top: 60px;
+	padding: 8px 23px;
+	letter-spacing: 1px;
+	font-size: 11px;
+	font-family: "Open Sans";
+	font-weight: 400;
 }
 	
 .description {
-	height: 200px;
-	padding: 50px 300px;
-	font-family: "Open Sans";
+	height: 284px;
+	padding: 50px 430px;
 	background-color: rgb(233, 174, 172);
 	line-height: 30px;	
 	text-align: justify;
+
 }	
 	
 	
@@ -138,3 +186,64 @@ h3 {
 	src: url(Oswald-VariableFont_wght.ttf); /* Путь к файлу со шрифтом */
 	}
 	
+	
+@font-face {
+	font-family: "Open Sans";
+	font-weight: 700;
+	font-style: normal;
+	src: url(./Open_Sans/OpenSans-Bold.ttf);
+}	
+@font-face {
+	font-family: "Open Sans";
+	font-weight: 700;
+	font-style: italic;
+	src: url(./Open_Sans/OpenSans-BoldItalic.ttf);
+}
+@font-face {
+	font-family: "Open Sans";
+	font-weight: 400;
+	font-style: italic; 
+	src: url(./Open_Sans/OpenSans-Italic.ttf);
+}
+@font-face {
+	font-family: "Open Sans";
+	font-weight: 300;
+	font-style: normal; 
+	src: url(./Open_Sans/OpenSans-Light.ttf);
+}
+@font-face {
+	font-family: "Open Sans";
+	font-weight: 300;
+	font-style: italic; 
+	src: url(./Open_Sans/OpenSans-LightItalic.ttf);
+}
+@font-face {
+	font-family: "Open Sans";
+	font-weight: 400;
+	font-style: normal; 
+	src: url(./Open_Sans/OpenSans-Regular.ttf);
+}
+@font-face {
+	font-family: "Open Sans";
+	font-weight: 800;
+	font-style: normal;
+	src: url(./Open_Sans/OpenSans-ExtraBold.ttf);
+}	
+@font-face {
+	font-family: "Open Sans";
+	font-weight: 800;
+	font-style: italic;
+	src: url(./Open_Sans/OpenSans-ExtraBoldItalic.ttf);
+}	
+@font-face {
+	font-family: "Open Sans";
+	font-weight: 600;
+	font-style: normal;
+	src: url(./Open_Sans/OpenSans-SemiBold.ttf);
+}	
+@font-face {
+	font-family: "Open Sans";
+	font-weight: 600;
+	font-style: italic;
+	src: url(./Open_Sans/OpenSans-SemiBoldItalic.ttf);
+}	
