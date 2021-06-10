@@ -20,7 +20,10 @@ h6 {
 }
 
 h2 {
-	font-family: Oswald-ExtraLight;
+	font-family: Oswald-ExtraLight; /* 
+						* У меня не работает. 
+					   	* Скорее всего, этот шрифт у тебя загружается из ОС, а не из папки с шрифтами сайта. 
+					*/
 	font-size: 23px;
 	font-weight: 100;
 	margin: 15px 0;
@@ -67,7 +70,11 @@ section.agency-wrapper {
 	float: left;
 	width: 50%;
 	height: 450px;
-	overflow: scroll;
+	overflow: scroll;      /* Зачем? 
+				* Посмотри demo: https://developer.mozilla.org/en-US/docs/Web/CSS/overflow
+				* Он нужен в тех редких случаях, когда контент блока не влезает.
+				* В ВК скинул то, как у меня выглядит блок с скроллом.
+				*/
 	background-color: #FFF;
 	
 }
