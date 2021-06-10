@@ -1,8 +1,12 @@
 
 @font-face {
+	/* 
+	  * Не работает Oswald-ExtraLight из-за того, что переменный шрифт подключается другим образом. 
+	  * https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Fonts/Variable_Fonts_Guide
+	*/
 	font-family: Oswald; /* Имя шрифта */
 	src: url(../fonts/Oswald-VariableFont_wght.ttf); /* Путь к файлу со шрифтом */
-	}
+	} /* Стилевая ошибкая */
 	
 	
 @font-face {
