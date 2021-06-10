@@ -177,7 +177,7 @@ section.agency-wrapper {
 	width: 590px;
 	background-color: rgb(233, 174, 172);
 	line-height: 165%;	
-	text-align: justify;
+	text-align: justify; /* Тексту по центру обычно задают выравнивание по центру. */
 	margin: auto;
 }
 
