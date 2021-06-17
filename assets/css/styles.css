@@ -42,11 +42,12 @@ p {
 
 section.agency-wrapper {
 	background-color: rgb(208, 230, 223);
-	padding: 52px 0;
+	padding: 52px 0 54px;
 	height: 552px;
 }
 
 .agency {
+	display: flex;
 	width: 855px;
 	margin: auto;
 	height: 552px;
@@ -64,25 +65,23 @@ section.agency-wrapper {
 
 .agency-left {
 	padding: 90px 45px;
-	float: left;
-	width: 50%;
-	height: 450px;
-	overflow: scroll;
+	flex-basis: 427.5px;
+	height: 448px;
 	background-color: #FFF;
 	
 }
 
 .agency-right {
-	float: right;
-	width: 50%;
-	height: 450px;
+	flex: 1;
+	height: 448px;
+	flex-basis: 427.5px;
 	object-fit: cover;
 	overflow:hidden;
 }
 	
 .agency-right img {
 	object-position: 0 -154px;
-	width: 428px;
+	width: 427.5px;
 }
 
 .devoted-wrapper {
@@ -93,6 +92,7 @@ section.agency-wrapper {
 }
 
 .devoted {
+	display: flex;
 	width: 855px;
 	margin: auto;
 	height: 552px;
@@ -100,12 +100,15 @@ section.agency-wrapper {
 }
 	
 .devoted-left {
-	float: left;
-	width: 285px;
-	height: 475px;
 	object-fit: cover;
+}
+
+.devoted > div {
+	flex: 1;
+	flex-basis: 285px;
+	height: 475px;
 	overflow: hidden;
-}	
+}
 
 .devoted-left img {
 	object-position: -28px 0px;
@@ -131,14 +134,9 @@ section.agency-wrapper {
 }
 	
 .devoted-right {
-	float: right;
-	width: 285px;
-	height: 475px;
 	padding: 70px 24px;
-	overflow: scroll;
 	background-color: rgb(233, 174, 172);
 	font-size: smaller;
-	
 }	
 
 .devoted-right h2 {
@@ -177,8 +175,55 @@ section.agency-wrapper {
 	width: 590px;
 	background-color: rgb(233, 174, 172);
 	line-height: 165%;	
-	text-align: justify;
+	text-align: center;
 	margin: auto;
+}
+
+.creative-wrapper {
+	height: 860px;
+	padding: 80px 0;
+	background-color: #FFF;
+}
+
+.creative {
+	width: 855px;
+	margin: auto;
+	text-align: center;
+}
+
+.creative span {
+	font-family: Oswald-Light;
+	font-size: 104px;
+}
+
+.creative-collage {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 44px;
+	height: 566px;
+	overflow: hidden;
+}
+
+.creative-collage div {
+	flex-basis: 202px;
+}
+
+.creative-collage div img:first-child {
+	margin-bottom: 14px;
+}
+
+
+.creative-collage div p {
+	font-style: italic;
+	font-size: 15px;
+	background-color:rgb(208, 230, 223);
+	height: 196px;
+	margin:0;
+}
+
+.creative-collage div h2 {
+	background-color:rgb(233, 174, 172);
+	margin: 0;
 }
 
 .quote-wrapper {
@@ -202,6 +247,7 @@ section.agency-wrapper {
 
 .section-divider {
 	height: 19px;
+	height: 478px;
 	border: none;
 	background-color: rgb(208, 230, 223);
 	margin: 0;
@@ -212,6 +258,56 @@ section.agency-wrapper {
 	height: 634px;
 }
 
+
+
+.info {
+	display: flex;
+	width: 855px;
+	margin: auto;
+}
+
+.info > div {
+	flex: 1 50%;
+}
+
+.info-blocks {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-right: 10px;
+}
+
+.info-blocks > div {
+	width: 198px;
+	height: 254px;
+	padding: 22px;
+	margin-bottom: 21px;
+	overflow: hidden;
+	border: solid rgb(40, 53, 117) 1px;
+}
+
+
+
+.info-pic {
+	height: 529px;
+	object-fit: cover;
+	overflow: hidden;
+	text-align: right;
+}
+
+.info-pic img {
+	object-position: 0 -47px;
+}
+
+.info-blocks div h2 {
+	margin-top: 20px;
+}
+
+.info-blocks div img {
+	margin-left: 14px;
+}
+
+/*
 .info {
 	width: 855px;
 	margin: auto;
@@ -252,6 +348,7 @@ section.agency-wrapper {
 .pic img {
 	object-position: 0 -47px;
 }
+*/
 
 .studio-wrapper {
 	padding: 52px 0;
@@ -260,6 +357,7 @@ section.agency-wrapper {
 }
 
 .studio {
+	display: flex;
 	width: 855px;
 	margin: auto;
 	height: 578px;
@@ -267,8 +365,7 @@ section.agency-wrapper {
 
 .studio-left {
 	padding: 110px 26px 110px 22px;
-	float: left;
-	width: 50%;
+	flex-basis: 427.5px;
 	height: 475px;
 	overflow: scroll;
 	color:rgb(40, 53, 117);
@@ -297,8 +394,7 @@ section.agency-wrapper {
 }
 
 .studio-right {
-	float: right;
-	width: 50%;
+	flex-basis: 427.5px;
 	height: 475px;
 	object-fit: cover;
 	overflow:hidden;
