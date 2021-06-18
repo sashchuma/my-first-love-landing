@@ -204,26 +204,66 @@ section.agency-wrapper {
 	overflow: hidden;
 }
 
-.creative-collage div {
+.creative-collage > div {
 	flex-basis: 202px;
+	overflow: hidden;
+	height: 566px;
 }
 
-.creative-collage div img:first-child {
+.creative-collage div div:first-child {
 	margin-bottom: 14px;
 }
 
+.creative-collage div div:last-child {
+	height: 100%;
+}
 
-.creative-collage div p {
+.lady div:first-child {
+	height: 184px;
+}
+
+.lady div:first-child img {
+	object-position: 0 -66px;
+}
+
+.lady div:last-child img {
+	object-position: -86px 0;
+}
+
+.sliced div:first-child {
+	height: 352px;
+}
+
+.sliced div:first-child img {
+	object-position: -70px 0;
+}
+
+.mcstatue div:first-child {
+	height: 294px;
+}
+
+.mcstatue div:last-child img {
+	object-position: 0 -100px;
+}
+
+.dazed div:first-child {
+	height: 370px;
+}
+
+.creative-collage div div p {
 	font-style: italic;
 	font-size: 15px;
 	background-color:rgb(208, 230, 223);
-	height: 196px;
-	margin:0;
+	height: 100%;
+	padding: 42px 16px;
+	text-align: left;
 }
 
-.creative-collage div h2 {
+.creative-collage div div h2 {
 	background-color:rgb(233, 174, 172);
-	margin: 0;
+	height: 100%;
+	padding: 58px 16px;
+	text-align: left;
 }
 
 .quote-wrapper {
@@ -245,20 +285,41 @@ section.agency-wrapper {
 	letter-spacing: 3px;
 }
 
-.section-divider {
-	height: 19px;
+.numbers-wrapper {
 	height: 478px;
-	border: none;
+	padding: 80px 0;
 	background-color: rgb(208, 230, 223);
-	margin: 0;
+}
+
+.numbers {
+	display: flex;
+	width: 855px;
+	height: 318px;
+	justify-content: space-between;
+	margin: auto;
+}
+
+.numbers div {
+	flex-basis: 270px;
+	text-align: center;
+}
+
+.numbers div:nth-child(2) {
+	align-self: center;
+}
+
+.numbers div:last-child {
+	align-self:flex-end;
+}
+
+.numbers div h1 {
+	font-size: 36px;
 }
 
 .info-wrapper {
 	padding: 52px 0;
 	height: 634px;
 }
-
-
 
 .info {
 	display: flex;
@@ -306,49 +367,6 @@ section.agency-wrapper {
 .info-blocks div img {
 	margin-left: 14px;
 }
-
-/*
-.info {
-	width: 855px;
-	margin: auto;
-	overflow: hidden;
-}
-
-.info-blocks {
-	float: left;
-	width: calc(855px - 416px)
-}
-
-.info-blocks h2 {
-	margin-top: 20px;
-}
-
-.info-blocks img {
-	margin-left: 14px;
-}
-
-.info-blocks div {	
-	padding: 22px;
-	float: left;
-	width: 198px;
-	height: 254px;
-	margin-right: 21px;
-	margin-bottom: 21px;
-	border: solid rgb(40, 53, 117) 1px;
-}
-
-.pic {
-	float: right;
-	width: 416px;
-	height: 529px;
-	object-fit: cover;
-	overflow: hidden;
-}
- 
-.pic img {
-	object-position: 0 -47px;
-}
-*/
 
 .studio-wrapper {
 	padding: 52px 0;
