@@ -1,0 +1,16 @@
+
+.description-wrapper {
+	background-color: rgb(233, 174, 172);
+	padding: 80px 0;
+	height: 284px;
+}
+	
+.description {
+	font-size: 26px;
+	font-weight: 600;
+	width: 590px;
+	background-color: rgb(233, 174, 172);
+	line-height: 165%;	
+	text-align: center;
+	margin: auto;
+}

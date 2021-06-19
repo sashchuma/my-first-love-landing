@@ -1,0 +1,19 @@
+
+.quote-wrapper {
+	padding: 66px 0;
+	height: 410px;
+}
+
+.quote {
+	width: 855px;
+	margin: auto;
+	padding-left: 46px;
+}
+
+.quote h1 {
+	font-size: 52px;
+	opacity: 0.2;
+	padding-left: 348px;
+	padding-top: 66px;
+	letter-spacing: 3px;
+}

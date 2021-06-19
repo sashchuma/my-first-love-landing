@@ -1,0 +1,55 @@
+
+.studio-wrapper {
+	padding: 52px 0;
+	height: 578px;
+	background-color:rgb(40, 53, 117);
+}
+
+.studio {
+	display: flex;
+	width: 855px;
+	margin: auto;
+	height: 578px;
+}
+
+.studio-left {
+	padding: 110px 26px 110px 22px;
+	flex-basis: 427.5px;
+	height: 475px;
+	overflow: scroll;
+	color:rgb(40, 53, 117);
+	background-color: rgb(233, 174, 172);
+}
+
+.studio-left h2{
+	margin: 15px 0 24px;
+}
+
+.studio-left p{
+	margin-bottom: 26px;
+}
+
+.studio-left a {
+	color: #FFF;
+	background-color: rgb(40, 53, 117);
+	width: 126px;
+	height: 32px;
+	text-decoration: none;
+	padding: 8px 23px;
+	letter-spacing: 1px;
+	font-size: 11px;
+	font-family: "Open Sans";
+	font-weight: 400;
+}
+
+.studio-right {
+	flex-basis: 427.5px;
+	height: 475px;
+	object-fit: cover;
+	overflow:hidden;
+}
+
+.studio-right img {
+	object-position: 0 -48px;
+	width: calc(855px/2);
+}

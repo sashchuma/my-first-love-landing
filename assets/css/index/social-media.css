@@ -1,0 +1,27 @@
+
+.socialmedia-wrapper {
+	padding: 44px 0;
+	height: 162px;
+	background-color:rgb(40, 53, 117);
+}
+
+.social-media {
+	width: 855px;
+	margin: auto;
+}
+
+.social-media img {
+	margin-right: 4px;
+	color: #FFF;
+}
+
+.social-media hr {
+	margin: 22px 0 14px;
+}
+
+.social-media p {
+	width: 400px;
+	margin: auto;
+	text-align: center;
+	color: #FFF;
+}

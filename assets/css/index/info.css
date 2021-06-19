@@ -1,0 +1,50 @@
+
+.info-wrapper {
+	padding: 52px 0;
+	height: 634px;
+}
+
+.info {
+	display: flex;
+	width: 855px;
+	margin: auto;
+}
+
+.info > div {
+	flex: 1 50%;
+}
+
+.info-blocks {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-right: 10px;
+}
+
+.info-blocks > div {
+	width: 198px;
+	height: 254px;
+	padding: 22px;
+	margin-bottom: 21px;
+	overflow: hidden;
+	border: solid rgb(40, 53, 117) 1px;
+}
+
+.info-pic {
+	height: 529px;
+	object-fit: cover;
+	overflow: hidden;
+	text-align: right;
+}
+
+.info-pic img {
+	object-position: 0 -47px;
+}
+
+.info-blocks div h2 {
+	margin-top: 20px;
+}
+
+.info-blocks div img {
+	margin-left: 14px;
+}
